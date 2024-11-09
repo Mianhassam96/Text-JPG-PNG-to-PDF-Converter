@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text - JPG/PNG to PDF Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MM Image to PDF Tool</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Upload Your JPG or PNG Images</h2>
+        <p>You can upload as many images as you like!</p>
+        <input type="file" id="imageUpload" accept="image/jpeg, image/png" multiple>
+        
+        <h3>Add Document Text</h3>
+        <textarea id="documentText" placeholder="Enter document text here..." rows="5" style="width: 100%; margin-top: 10px;"></textarea>
+        
+        <button id="convertButton">Convert & Download PDF</button>
+        <p class="loading" id="loadingText" style="display: none;">Converting... Please wait</p>
+        <p id="downloadLink"></p>
+
+        <div id="imagePreview" style="margin-top: 20px;"></div>
+
+        <div class="about-box">
+            <h3>About MultiMian</h3>
+            <p>The MultiMian Image or Text to PDF Tool is designed to offer users an easy and efficient way to convert both text files and images into PDF format. It caters to a variety of needs, whether for students, professionals, or anyone requiring document sharing. The tool provides a user-friendly interface, enabling quick uploads and conversions, ensuring high-quality output every time.</p>
+        </div>
+    </main>
+ 
+    <footer>
+        <p>&copy; 2024 MultiMian. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
