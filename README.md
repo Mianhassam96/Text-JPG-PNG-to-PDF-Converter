@@ -27,3 +27,6 @@ Requirements
 License
 
 This tool is open-source and free to use. Feel free to modify and improve it. Contributions are always welcome!
+
+Live perview:
+https://text-jpg-png-to-pdf-converter.vercel.app/
